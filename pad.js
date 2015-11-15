@@ -27,7 +27,7 @@ function pad(str, padChar, desiredLength, padEnd) {
 
   if (str.length >= desiredLength) return str;
 
-  padding = new Array(desiredLength - str.Length + 1).join(padChar);
+  padding = new Array(desiredLength - str.length + 1).join(padChar);
 
-  return padEnd ? (str + padEnd) : (padEnd + str);
+  return padEnd ? (str + padding) : (padding + str);
 }
